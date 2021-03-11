@@ -1,0 +1,20 @@
+@import '@styles/variables.scss';
+
+.infoBox {
+  width: 325px;
+  height: 250px;
+  box-shadow: 0 5px 10px -5px black;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: $discord-med-dark;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text {
+  margin-bottom: 15px;
+}

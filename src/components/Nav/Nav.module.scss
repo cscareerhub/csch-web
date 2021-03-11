@@ -1,0 +1,40 @@
+@import '@styles/variables.scss', '@styles/mixins.scss';
+
+.nav {
+  @include unselectable;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  box-shadow: 0 5px 10px -5px black;
+  background-color: $discord-darker;
+  position: relative; // required for box shadow to be visible
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.navLinks a {
+  @include primary-font;
+  margin-left: 3vw;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: $csch-color-dark;
+  }
+
+  &:before {
+    @include link-animation;
+    background-color: $csch-color-dark;
+  }
+
+  &:hover:before {
+    @include link-hover-animation;
+  }
+}

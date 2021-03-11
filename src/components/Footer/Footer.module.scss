@@ -1,0 +1,57 @@
+@import '@styles/variables.scss', '@styles/mixins.scss';
+
+.footer {
+  height: auto;
+  width: 100vw;
+  background-color: $csch-color-darkest;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
+}
+
+.footerContent {
+  height: 100%;
+  width: auto;
+
+  div {
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .footerLink {
+    color: $csch-color-lighter;
+    transition: all 0.05s ease;
+    font-size: 14px;
+    position: relative;
+
+    &:hover {
+      color: lighten($csch-color-lighter, 5%);
+    }
+
+    &:before {
+      @include link-animation;
+    }
+
+    &:hover:before {
+      @include link-hover-animation;
+    }
+  }
+}
+
+.footerSocials {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 425px) {
+    margin-top: 5vh;
+  }
+}

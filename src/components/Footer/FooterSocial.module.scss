@@ -1,0 +1,22 @@
+@import '@styles/variables.scss';
+
+.footerSocial {
+  width: 50px;
+  height: 50px;
+  background-color: $discord-dark;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2vw;
+  transition: all 0.1s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $discord-darker;
+  }
+}
+
+.footerSocialImage {
+  width: 30px;
+}
