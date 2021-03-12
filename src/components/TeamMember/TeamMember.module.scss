@@ -5,12 +5,11 @@
   height: 250px;
   box-shadow: 0 5px 10px -5px black;
   border-radius: 15px;
-  padding: 20px;
   background-color: $discord-med-dark;
 }
 
 .name {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .username {
@@ -21,4 +20,15 @@
 
 .userRole {
   color: $csch-color-dark;
+}
+
+.imageContainer {
+  height: 140px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  background-color: $discord-darker;
+}
+
+.infoContainer {
+  padding: 10px 10px 20px 10px;
 }
