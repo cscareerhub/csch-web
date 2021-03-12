@@ -18,8 +18,16 @@ const TeamMember = (props: TeamMemberProps): ReactElement => {
       </div>
       <div className={styles.infoContainer}>
         <p className={styles.username}>{username}</p>
-        <p className={styles.userRole}>{userRole}</p>
-        <div className={active ? 'active' : 'inactive'} />
+        <p
+          className={classnames(
+            styles.userRole,
+            userRole === 'Server Mod' && styles.mod,
+            userRole === 'Head Server Mod' && styles.headMod
+          )}
+        >
+          {userRole}
+        </p>
+        <div className={classnames(styles.statusCircle, !active && styles.inactive)} />
       </div>
     </div>
   );

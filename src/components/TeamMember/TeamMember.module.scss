@@ -17,20 +17,47 @@
 }
 
 .userRole {
+  color: lighten(red, 5%);
+}
+
+.headMod {
+  color: $neon-green;
+}
+
+.mod {
   color: $csch-color-dark;
 }
 
 .imageContainer {
-  height: 160px;
+  height: 140px;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
   background-color: $discord-darker;
 
   img {
-    margin-top: -30px;
+    margin-top: -50px;
   }
 }
 
 .infoContainer {
   padding: 10px 10px 20px 10px;
+}
+
+.statusCircle {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  background-color: $csch-color-light;
+  border-bottom: 3px solid $discord-med-dark;
+  border-right: 3px solid $discord-med-dark;
+  border-top: 3px solid #32363a;
+  border-left: 3px solid #32363a;
+  transform: rotate(45deg);
+  position: relative;
+  top: -67px;
+  left: 205px;
+
+  &.inactive {
+    background-color: $site-gray;
+  }
 }
