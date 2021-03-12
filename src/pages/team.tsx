@@ -17,7 +17,7 @@ const teamMembers = [
     id: 2,
     name: 'Brenda',
     username: 'Brenda',
-    userRole: 'Server Partner, Lead Developer',
+    userRole: 'Server Partner, Bot & Web Developer',
     active: true,
     imageSrc: '/images/team/brenda.gif'
   },
@@ -40,7 +40,7 @@ const teamMembers = [
     id: 4,
     name: 'Bri',
     username: 'iNirvana',
-    userRole: 'Header Serv Mod',
+    userRole: 'Header Server Mod',
     active: true,
     imageSrc: '/images/team/inirvana.png'
   },
