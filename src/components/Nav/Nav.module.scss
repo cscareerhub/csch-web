@@ -12,6 +12,10 @@
   box-shadow: 0 5px 10px -5px black;
   background-color: $discord-darker;
   position: relative; // required for box shadow to be visible
+
+  @media screen and (max-width: 1028px) {
+    height: 15vh;
+  }
 }
 
 .logo {
