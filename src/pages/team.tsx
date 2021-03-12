@@ -11,8 +11,7 @@ const teamMembers = [
     name: 'Kevin',
     username: 'Kevin',
     userRole: 'Server Owner',
-    active: true,
-    imageSrc: '/images/team/kevin.png'
+    active: true
   },
   {
     id: 2,
@@ -35,8 +34,7 @@ const teamMembers = [
     name: 'Peter',
     username: 'Peter',
     userRole: 'Server Admin',
-    active: true,
-    imageSrc: '/images/team/peter.png'
+    active: true
   },
   {
     id: 4,
