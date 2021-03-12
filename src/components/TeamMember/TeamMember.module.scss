@@ -8,11 +8,9 @@
   background-color: $discord-med-dark;
 }
 
-.name {
-  font-size: 18px;
-}
-
 .username {
+  font-size: 16px;
+
   &:before {
     content: '@';
   }
@@ -23,10 +21,14 @@
 }
 
 .imageContainer {
-  height: 140px;
+  height: 160px;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
   background-color: $discord-darker;
+
+  img {
+    margin-top: -30px;
+  }
 }
 
 .infoContainer {
