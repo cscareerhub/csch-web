@@ -18,3 +18,13 @@
 .text {
   margin-bottom: 15px;
 }
+
+.actionButton {
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: $discord-lighter;
+
+  &:hover {
+    background-color: $discord-dark;
+  }
+}

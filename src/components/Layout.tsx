@@ -18,7 +18,7 @@ const Layout = (props: LayoutProps): ReactElement => {
           <Header
             title="We are a community of software engineers on a mission of lifelong learning"
             text="CS Career Hub was created to help guide engineers at any point in their career. Over 18,000 users have joined our community, ranging from first-year students to hiring managers. In the past few years, we've facilitated thousands of mock interviews and resume reviews with candidates. With plenty of plans on the roadmap, you can expect even more to come."
-            actionText="Join our community"
+            actionText="Join CS Career Hub"
           />
         )}
         {children}

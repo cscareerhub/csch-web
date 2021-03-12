@@ -13,30 +13,30 @@ const Home = (): ReactElement => (
           <InfoBox
             className={styles.infoBox}
             title="Challenge Yourself"
-            text="Get work done quicker by building out entire projects or isolating code to test features and animations. Want to keep it all under wraps? Upgrade to a PRO account to keep your work private."
-            actionText=""
-            link=""
+            text="Participate in daily programming challenges, solve leetcode problems with others, and collaborate on projects with others in the community."
+            actionText="Solve a Challenge"
+            link="https://discord.gg/6EyEDKk"
           />
           <InfoBox
             className={styles.infoBox}
-            title="Polish Your Resume"
-            text="Just starting out? Browsing, forking, and playing with Pens is a great way to understand how they were built and how code works. Teaching a class? Professor mode lets your students to see and comment on real-time Pen updates."
-            actionText=""
-            link=""
+            title="Prep for the Job Hunt"
+            text="Need more eyes on your resume? The CSCH community can help you improve it for your next job-hunting season. Need to polish your interviewing skills? Trade live mock interviews with peers."
+            actionText="Polish Your Skills"
+            link="https://discord.gg/6EyEDKk"
           />
           <InfoBox
             className={styles.infoBox}
-            title="Read &amp; Learn"
-            text="Become a part of the most active front-end community in the world by sharing work. Presenting at a conference? Show your code directly in the browser with Presentation Mode."
-            actionText=""
-            link=""
+            title="Read Our Wiki &amp; FAQ"
+            text="Read through the channels, pinned posts, and our comprehensive Wiki &amp; FAQ to learn more about CS careers, the industry, and the experiences of others."
+            actionText="Read the Wiki"
+            link="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/"
           />
           <InfoBox
             className={styles.infoBox}
-            title="Contribute &amp; Develop"
-            text="Become a part of the most active front-end community in the world by sharing work. Presenting at a conference? Show your code directly in the browser with Presentation Mode."
-            actionText=""
-            link=""
+            title="Crowdsource Advice"
+            text="Engage in career and programming discussion. Get advice from students, experienced devs, and recruiters. Members of this community come from all backgrounds."
+            actionText="Join the Community"
+            link="https://discord.gg/6EyEDKk"
           />
         </div>
       </Layout>

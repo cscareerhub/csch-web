@@ -18,7 +18,7 @@ const InfoBox = (props: InfoBoxProps): ReactElement => {
     <div className={classnames(styles.infoBox, className)}>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.text}>{text}</p>
-      <ActionButton actionText={actionText} link={link} />
+      <ActionButton className={styles.actionButton} actionText={actionText} link={link} />
     </div>
   );
 };
