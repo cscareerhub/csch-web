@@ -1,7 +1,6 @@
 import ActionButton from '@components/ActionButton/ActionButton';
 import React, { ReactElement } from 'react';
 import classnames from 'classnames';
-// import Image from 'next/image';
 import styles from './InfoBox.module.scss';
 
 interface InfoBoxProps {
