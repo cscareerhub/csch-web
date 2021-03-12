@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React, { ReactElement } from 'react';
 import FooterSocial from './FooterSocial';
 import styles from './Footer.module.scss';
@@ -21,27 +21,29 @@ const Footer = (): ReactElement => (
     </div>
     <div className={styles.footerSocials}>
       <FooterSocial
-        image={
-          <Image
-            className={styles.footerSocialImage}
-            src="/images/discord-logo.png"
-            height={25}
-            width={25}
-            alt="Discord logo"
-          />
-        }
+        // image={
+        //   <Image
+        //     className={styles.footerSocialImage}
+        //     src="/images/discord-logo.png"
+        //     height={25}
+        //     width={25}
+        //     alt="Discord logo"
+        //   />
+        // }
+        image={<div />}
         link="https://discord.gg/6EyEDKk"
       />
       <FooterSocial
-        image={
-          <Image
-            className={styles.footerSocialImage}
-            src="/images/reddit-logo.png"
-            height={25}
-            width={25}
-            alt="Reddit logo"
-          />
-        }
+        // image={
+        //   <Image
+        //     className={styles.footerSocialImage}
+        //     src="/images/reddit-logo.png"
+        //     height={25}
+        //     width={25}
+        //     alt="Reddit logo"
+        //   />
+        // }
+        image={<div />}
         link="https://www.reddit.com/r/cscareerquestions/comments/a7y8qg/cs_career_hackers_discord_server/"
       />
     </div>

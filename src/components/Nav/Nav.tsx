@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import styles from './Nav.module.scss';
 
 const Nav = (): ReactElement => (
@@ -8,7 +8,7 @@ const Nav = (): ReactElement => (
     <nav className={styles.nav}>
       <Link href="/">
         <a className={styles.logo}>
-          <Image src="/csch-statico-transparent.png" height={45} width={45} alt="CSCH gear logo" />
+          {/* <Image src="/csch-statico-transparent.png" height={45} width={45} alt="CSCH gear logo" /> */}
         </a>
       </Link>
       <div className={styles.navLinks}>

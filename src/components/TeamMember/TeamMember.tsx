@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import classnames from 'classnames';
 import styles from './TeamMember.module.scss';
 
@@ -15,7 +15,7 @@ const TeamMember = (props: TeamMemberProps): ReactElement => {
   const { name, username, userRole, active, imageSrc } = props;
   return (
     <div className={classnames(styles.teamMember)}>
-      <div className={styles.imageContainer}>{imageSrc && <Image src={`${imageSrc}`} width={250} height={250} />}</div>
+      {/* <div className={styles.imageContainer}>{imageSrc && <Image src={`${imageSrc}`} width={250} height={250} />}</div> */}
       <div className={styles.infoContainer}>
         <p className={styles.name}>{name}</p>
         <p className={styles.username}>{username}</p>
