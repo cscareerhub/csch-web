@@ -5,7 +5,6 @@ body {
   height: auto;
   width: 100vw;
   overflow-x: hidden;
-  color: $general-font-color;
   background-color: $discord-med-dark;
 }
 
@@ -19,27 +18,11 @@ h3,
 h4,
 h5,
 h6,
-button {
-  @include primary-font;
-}
-
 p,
 a,
-li {
+li,
+button {
   @include primary-font;
-}
-
-@media screen and (max-width: 1024px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    @include primary-font;
-    @include unselectable;
-  }
 }
 
 p,

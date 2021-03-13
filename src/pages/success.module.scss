@@ -1,6 +1,15 @@
+@import '@styles/mixins.scss';
+
 .successContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+
+  p {
+    margin: 10px;
+
+    @include element-width-by-screen-width;
+  }
 }

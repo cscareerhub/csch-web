@@ -1,16 +1,22 @@
-$general-font-color: #000;
+// general site colors
 $site-gray: rgba(150, 150, 150, 1);
+$offwhite: #f9f9f9;
+$neon-green: #00ff3e;
+$light-red: lighten(red, 5%);
+
+// CSCH brand colors based on logo
 $csch-color-darkest: darken(#2fcc71, 15%);
 $csch-color-darker: darken(#2fcc71, 5%);
 $csch-color-dark: #2fcc71;
 $csch-color-light: #2fcc71;
 $csch-color-lighter: #e5fff2;
+
+// Discord brand colors
 $discord-brand-color: #7289da;
 $discord-darker: #202225;
 $discord-med-dark: #232629;
 $discord-dark: #2d3236;
 $discord-lighter: #36393b;
-$offwhite: #f9f9f9;
-$neon-green: #00ff3e;
 
+// reused values
 $box-shadow: 0 5px 10px -5px black;

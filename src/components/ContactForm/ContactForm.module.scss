@@ -2,17 +2,9 @@
 
 .contactForm {
   @include box-shape;
+  @include element-width-by-screen-width;
   display: flex;
   flex-direction: column;
-  width: 50vw;
-
-  @media screen and (max-width: 1028px) {
-    width: 80vw;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 90vw;
-  }
 
   input,
   textarea,
@@ -29,6 +21,7 @@
 
   textarea {
     height: 30vh;
+    resize: none;
   }
 
   button {
@@ -42,4 +35,11 @@
       cursor: pointer;
     }
   }
+}
+
+.requiredNotation {
+  position: relative;
+  top: -247px;
+  left: 47.5vw;
+  color: $light-red;
 }

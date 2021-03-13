@@ -58,3 +58,15 @@
   padding: 20px;
   background-color: $discord-med-dark;
 }
+
+@mixin element-width-by-screen-width {
+  width: 50vw;
+
+  @media screen and (max-width: 1028px) {
+    width: 80vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
+}
