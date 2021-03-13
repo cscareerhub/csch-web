@@ -54,7 +54,7 @@ const teamMembers = [
 const Team = (): ReactElement => (
   <>
     <HeadComponent title="CS Career Hub | Home" />
-    <div className="home-container">
+    <div>
       <Layout>
         <div className={styles.teamMembers}>
           {teamMembers.map(member => (

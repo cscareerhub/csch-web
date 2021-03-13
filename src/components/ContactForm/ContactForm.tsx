@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import styles from './ContactForm.module.scss';
 
 const ContactForm = (): ReactElement => (
-  <form name="contact" method="POST" className={styles.contactForm}>
+  <form className={styles.contactForm} name="contact" method="POST" action="/success" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <input type="text" name="name" id="name" placeholder="Name" />
     <input type="email" name="email" id="email" placeholder="Email" />

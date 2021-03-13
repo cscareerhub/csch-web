@@ -26,7 +26,7 @@ button {
 p,
 a,
 li {
-  @include secondary-font;
+  @include primary-font;
 }
 
 @media screen and (max-width: 1024px) {
