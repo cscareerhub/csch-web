@@ -7,8 +7,8 @@ const Success = (): ReactElement => (
     <div className={styles.successContainer}>
       <p>Message successfully submitted!</p>
       <p>
-        If you sent a message that requires a reply, watch out for a message on Discord if you used your username with
-        an ID. Otherwise, we'll write back to the email provided.
+        If you sent a message that requires a reply and used your username with an ID, watch out for a private message
+        on Discord. Otherwise, we'll write back to the email provided.
       </p>
     </div>
   </Layout>
