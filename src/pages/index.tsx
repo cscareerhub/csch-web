@@ -20,7 +20,7 @@ const Home = (): ReactElement => (
           <InfoBox
             className={styles.infoBox}
             title="Prep for the Job Hunt"
-            text="Need more eyes on your resume? The CSCH community can help you improve it for your next job-hunting season. Need to polish your interviewing skills? Trade live mock interviews with peers."
+            text="Need more eyes on your resume? The CSCH community can help you polish it. Need to dust off your interviewing skills? Trade live mock interviews with peers and industry professionals."
             actionText="Polish Your Skills"
             link="https://discord.gg/6EyEDKk"
           />
