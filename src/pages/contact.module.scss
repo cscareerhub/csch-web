@@ -1,8 +1,19 @@
+@import '@styles/mixins.scss';
+
 .contactContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-  padding: 20px 0;
+  padding: 40px 0;
+
+  ul {
+    list-style: inside;
+    margin: 20px 0 40px 0;
+  }
+}
+
+.contactText {
+  @include element-width-by-screen-width-narrower;
 }

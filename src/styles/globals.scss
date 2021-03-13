@@ -53,8 +53,22 @@ h2.fancy {
 }
 
 code {
-  background: #fafafa;
+  background: $discord-lighter;
   border-radius: 5px;
-  padding: 0.75rem;
+  padding: 2px 5px;
+  margin: 0 1px;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+}
+
+span.highlightedText {
+  color: $csch-color-dark;
+}
+
+a {
+  color: $csch-color-dark;
+
+  &:hover {
+    cursor: pointer;
+    color: $csch-color-darker;
+  }
 }

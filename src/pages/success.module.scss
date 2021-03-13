@@ -10,6 +10,6 @@
   p {
     margin: 10px;
 
-    @include element-width-by-screen-width;
+    @include element-width-by-screen-width-narrower;
   }
 }

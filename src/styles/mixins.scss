@@ -70,3 +70,11 @@
     width: 90vw;
   }
 }
+
+@mixin element-width-by-screen-width-narrower {
+  width: 50vw;
+
+  @media screen and (max-width: 1028px) {
+    width: 80vw;
+  }
+}
