@@ -1,38 +1,18 @@
-# Next + Netlify Starter
+# CSCH on Next + Netlify
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ed50f56e-4fc2-4c98-8b66-1e5074c6f3d3/deploy-status)](https://app.netlify.com/sites/next-starter/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/076322a1-ac5f-457f-8028-9e33d088fba0/deploy-status)](https://app.netlify.com/sites/cscareerhub-next/deploys)
 
-This is a [Next.js](https://nextjs.org/) v10.0.4 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/Bk4UicocL)!
+We are a community of software engineers on a mission of lifelong learning.
 
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases.
+CS Career Hub was created to help guide engineers at any point in their career. Over 18,000 users have joined our community, ranging from first-year students to hiring managers. In the past few years, we've facilitated thousands of mock interviews and resume reviews with candidates. With plenty of plans on the roadmap, you can expect even more to come.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex)
+And this is our website! You'll find information about CSCH, the staff that runs, links to the Wiki & FAQ, and ways to contact us.
 
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
+Interested in seeing what's next or contributing? Take a look at our [roadmap](https://github.com/cscareerhub/csch-web/projects/1).
 
-## Getting Started
+## Contributing
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-### Installation options
-
-**Option one:** One-click deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex)
-
-**Option two:** Manual clone
-
-1. Clone this repo: `git clone https://github.com/cassidoo/next-netlify-starter.git`
-2. Navigate to the directory and run `npm run dev`
-3. Make your changes
-4. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
+1. Clone the repository and switch to the `stage` branch.
+2. Install dependencies with `yarn install`.
+3. Run the development server with `yarn dev`.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit any file.
