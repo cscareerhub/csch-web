@@ -1,0 +1,37 @@
+@import '@styles/variables.scss', '@styles/mixins.scss';
+
+.contactForm {
+  @include box-shape;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+
+  input,
+  textarea,
+  button {
+    @include primary-font;
+    height: 40px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: $offwhite;
+    color: $discord-darker;
+  }
+
+  textarea {
+    height: 30vh;
+  }
+
+  button {
+    padding: 0;
+    background-color: $csch-color-dark;
+    color: $offwhite;
+    transition: all 0.1s ease;
+
+    &:hover {
+      background-color: $csch-color-darkest;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,11 +1,10 @@
-@import '@styles/variables.scss';
+@import '@styles/variables.scss', '@styles/mixins.scss';
 
 .teamMember {
+  @include box-shape;
   width: 250px;
   height: 250px;
-  box-shadow: 0 5px 10px -5px black;
-  border-radius: 15px;
-  background-color: $discord-med-dark;
+  padding: 0;
 }
 
 .username {

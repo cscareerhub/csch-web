@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2vw;
-  box-shadow: 0 5px 10px -5px black;
+  box-shadow: $box-shadow;
   background-color: $discord-darker;
   position: relative; // required for box shadow to be visible
 

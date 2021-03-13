@@ -1,12 +1,9 @@
-@import '@styles/variables.scss';
+@import '@styles/variables.scss', '@styles/mixins.scss';
 
 .infoBox {
+  @include box-shape;
   width: 300px;
   height: 250px;
-  box-shadow: 0 5px 10px -5px black;
-  border-radius: 15px;
-  padding: 20px;
-  background-color: $discord-med-dark;
 }
 
 .title {
