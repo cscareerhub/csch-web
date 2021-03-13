@@ -1,3 +1,5 @@
+@import '@styles/variables.scss';
+
 @mixin primary-font {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -50,6 +52,20 @@
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+@mixin primary-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: $csch-color-darker;
+  transition: all 0.1s ease;
+  color: $offwhite;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $csch-color-darkest;
+  }
 }
 
 @mixin box-shape {

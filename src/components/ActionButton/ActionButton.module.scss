@@ -1,15 +1,6 @@
-@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
 
 .actionButton {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
+  @include primary-button;
   margin: 10px 0;
-  background-color: $csch-color-darker;
-  transition: all 0.1s ease;
-
-  &:hover {
-    cursor: pointer;
-    background-color: $csch-color-darkest;
-  }
 }

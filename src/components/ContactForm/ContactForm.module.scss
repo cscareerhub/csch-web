@@ -25,14 +25,7 @@
   }
 
   button {
+    @include primary-button;
     padding: 0;
-    background-color: $csch-color-dark;
-    color: $offwhite;
-    transition: all 0.1s ease;
-
-    &:hover {
-      background-color: $csch-color-darkest;
-      cursor: pointer;
-    }
   }
 }

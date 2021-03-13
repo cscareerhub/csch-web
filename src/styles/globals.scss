@@ -66,6 +66,7 @@ span.highlightedText {
 
 a {
   color: $csch-color-dark;
+  transition: all 0.1s ease;
 
   &:hover {
     cursor: pointer;
