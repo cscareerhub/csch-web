@@ -7,8 +7,7 @@ const ContactForm = (): ReactElement => (
     <input type="text" name="name" id="name" placeholder="Name" />
     <input type="text" name="username" id="username" placeholder="Username#ID" />
     <input type="email" name="email" id="email" placeholder="Email" />
-    <textarea name="message" id="message" placeholder="Message" required />
-    <p className={styles.requiredNotation}>*</p>
+    <textarea name="message" id="message" placeholder="Message (required)" required />
     <button type="submit">Send</button>
   </form>
 );
