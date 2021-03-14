@@ -12,19 +12,19 @@ const Contact = (): ReactElement => (
         <div className={styles.contactText}>
           <p>
             If you have questions, concerns, feedback, or anything else that requires the attention of CS Career Hub
-            staff, feel free to reach out using:
+            staff, feel free to reach out by:
           </p>
           <ul>
             <li>
-              In the public <a href="https://discord.gg/6EyEDKk">#ask-a-mod</a> channel in our Discord server
+              Asking in the public <a href="https://discord.gg/6EyEDKk">#ask-a-mod</a> channel in our Discord server
             </li>
             <li>
-              DM the CSCH Megabot using the{' '}
+              DMing the CSCH Megabot using the{' '}
               <a href="https://github.com/cscareerhub/megabot/blob/master/specs/modchat.spec.md">modmail command</a>{' '}
               <code>++mc</code> (or <code>++mc -a</code> for anonymity) to message the whole team on Discord (must be in
               the server to do this)
             </li>
-            <li>The below contact form where name, username, and email are all optional</li>
+            <li>Sending a message in the below contact form where name, username, and email are all optional</li>
           </ul>
         </div>
         <ContactForm />
