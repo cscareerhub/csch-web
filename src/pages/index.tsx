@@ -6,7 +6,7 @@ import styles from './index.module.scss';
 
 const Home = (): ReactElement => (
   <>
-    <HeadComponent title="CS Career Hub | Home" />
+    <HeadComponent title="Home" />
     <div>
       <Layout useHeader>
         <div className={styles.infoBoxContainer}>

@@ -6,7 +6,7 @@ import styles from './contact.module.scss';
 
 const Contact = (): ReactElement => (
   <>
-    <HeadComponent title="CS Career Hub | Home" />
+    <HeadComponent title="Contact" />
     <Layout>
       <div className={styles.contactContainer}>
         <div className={styles.contactText}>

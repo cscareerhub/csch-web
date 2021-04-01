@@ -53,7 +53,7 @@ const teamMembers = [
 
 const Team = (): ReactElement => (
   <>
-    <HeadComponent title="CS Career Hub | Home" />
+    <HeadComponent title="Team" />
     <div>
       <Layout>
         <div className={styles.teamMembers}>
