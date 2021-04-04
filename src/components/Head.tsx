@@ -38,7 +38,7 @@ const HeadComponent: React.FC<HeadProps> = props => {
       <meta property="og:image" content={metaImage} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:locale" content="en_US" />
-      <meta property="og:url" content={window.location.href} />
+      <meta property="og:url" content="https://cscareerhub.com" />
       <meta property="twitter:image" content={metaImage} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:description" content={metaDescription} />
