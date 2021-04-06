@@ -14,11 +14,11 @@ const Nav = (): ReactElement => (
         <a href="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/" target="_blank" rel="noreferrer">
           Wiki &amp; FAQ
         </a>
-        <Link href="/guidelines">
-          <a>Rules & guidelines</a>
-        </Link>
         <Link href="/team">
           <a>Team</a>
+        </Link>
+        <Link href="/code-of-conduct">
+          <a>Code of conduct</a>
         </Link>
         <Link href="/contact">
           <a>Contact</a>
