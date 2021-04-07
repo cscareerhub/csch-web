@@ -10,7 +10,6 @@
 
   .codeOfConductContent {
     width: 50vw;
-    min-width: 350px;
 
     @include element-width-by-screen-width-narrower;
 
@@ -45,10 +44,6 @@
     strong {
       font-weight: 600;
     }
-  }
-
-  .codeOfConductBottom {
-    text-align: center;
   }
 }
 
