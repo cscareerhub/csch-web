@@ -16,3 +16,4 @@ Interested in seeing what's next or contributing? Take a look at our [roadmap](h
 2. Install dependencies with `yarn install`.
 3. Run the development server with `yarn dev`.
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit any file.
+5. When making a pull request, use the `stage` branch as the base branch.
