@@ -16,7 +16,7 @@ const teamMembers = [
   },
   { id: 3, username: 'Nik', userRole: 'Server Admin, Bot Developer', active: true, imageSrc: '/images/team/nik.png' },
   { id: 4, username: 'Peter', userRole: 'Server Admin', active: true },
-  { id: 5, username: 'iNirvana', userRole: 'Header Server Mod', active: true, imageSrc: '/images/team/inirvana.png' },
+  { id: 5, username: 'iNirvana', userRole: 'Head Server Mod', active: true, imageSrc: '/images/team/inirvana.png' },
   { id: 6, username: 'Gopher', userRole: 'Head Server Mod', active: true, imageSrc: '/images/team/gopher.png' },
   { id: 7, username: 'Jeremy', userRole: 'Head Server Mod', active: true, imageSrc: '/images/team/jeremy.png' },
   { id: 8, username: 'Wickler', userRole: 'Head Server Mod', active: true, imageSrc: '/images/team/wickler.png' },
