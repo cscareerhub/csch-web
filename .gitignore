@@ -30,3 +30,8 @@ yarn-error.log*
 .env.production.local
 
 *.d.ts
+
+# intelliJ
+.idea/**
+*.iml
+*.ipr
