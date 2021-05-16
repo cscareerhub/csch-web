@@ -4,7 +4,7 @@
 
 We are a community of software engineers on a mission of lifelong learning.
 
-CS Career Hub was created to help guide engineers at any point in their career. Over 18,000 users have joined our community, ranging from first-year students to hiring managers. In the past few years, we've facilitated thousands of mock interviews and resume reviews with candidates. With plenty of plans on the roadmap, you can expect even more to come.
+CS Career Hub was created to help guide engineers at any point in their career. Over 20,000 users have joined our community, ranging from first-year students to hiring managers. In the past few years, we've facilitated thousands of mock interviews and resume reviews with candidates. With plenty of plans on the roadmap, you can expect even more to come.
 
 And [this is our website](https://cscareerhub.com/)! You'll find information about CSCH, the staff that runs it, links to the Wiki & FAQ, and ways to contact us.
 
