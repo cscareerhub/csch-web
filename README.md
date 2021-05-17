@@ -32,7 +32,7 @@ test/<yourtestingchange>
 misc/<yourmiscchange>
 ```
 
-6. Once you've made change, create a pull request to the CSCH megabot repo's development branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
+6. Once you've made change, create a pull request to the this repo's `stage` branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
 
 ```
 branch name: docs/change
