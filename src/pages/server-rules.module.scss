@@ -14,13 +14,14 @@
     @include element-width-by-screen-width-narrower;
 
     h1 {
-      margin-bottom: 2.5rem;
+      margin: 2.5rem 0;
       font-size: 2rem;
       font-weight: bold;
     }
-    
+
     ol {
       list-style: decimal;
+      margin-left: 17px;
     }
 
     p {
@@ -28,4 +29,3 @@
     }
   }
 }
-
