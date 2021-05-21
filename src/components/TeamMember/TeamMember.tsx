@@ -6,15 +6,14 @@ interface TeamMemberProps {
   username: string;
   userRole: string;
   active: boolean;
-  imageSrc?: string;
 }
 
 const TeamMember = (props: TeamMemberProps): ReactElement => {
-  const { username, userRole, active, imageSrc } = props;
+  const { username, userRole, active } = props;
   return (
     <div className={classnames(styles.teamMember)}>
       <div className={styles.imageContainer}>
-        {imageSrc && <img src={imageSrc} width={250} height={250} alt="CSCH team member profile" loading="lazy" />}
+        <img src="https://cscareerhub.com/csch-statico.png" width={250} height={250} alt="CSCH logo" loading="lazy" />
       </div>
       <div className={styles.infoContainer}>
         <p className={styles.username}>{username}</p>
@@ -31,10 +30,6 @@ const TeamMember = (props: TeamMemberProps): ReactElement => {
       </div>
     </div>
   );
-};
-
-TeamMember.defaultProps = {
-  imageSrc: ''
 };
 
 export default TeamMember;
