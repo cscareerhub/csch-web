@@ -18,10 +18,10 @@ const Nav = (): ReactElement => (
           <a>Team</a>
         </Link>
         <Link href="/server-rules">
-          <a>Server rules</a>
+          <a>Server Rules</a>
         </Link>
         <Link href="/code-of-conduct">
-          <a>Code of conduct</a>
+          <a>Code of Conduct</a>
         </Link>
         <Link href="/contact">
           <a>Contact</a>
