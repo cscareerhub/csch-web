@@ -19,7 +19,7 @@ export default async function getTeamMembers() {
   const records = await table.select({}).all();
   const minifiedRecords = await getMinifiedRecords(records);
 
-  // console.log(minifiedRecords);
+  console.log(minifiedRecords);
 
   return minifiedRecords;
 }
