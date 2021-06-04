@@ -1,10 +1,14 @@
 import Airtable from 'airtable';
 
-const base = new Airtable({
-  apiKey: process.env.AIRTABLE_API_KEY
-}).base(process.env.AIRTABLE_BASE_ID);
+// get the Team table
+const getTable = () => {
+  const base = new Airtable({
+    apiKey: process.env.AIRTABLE_API_KEY
+  }).base(process.env.AIRTABLE_BASE_ID);
 
-const table = base('Team');
+  const table = base('Team');
+  return table;
+};
 
 // gets the data we want and puts it into variables
 const minifyRecord = record => ({
@@ -16,6 +20,7 @@ const minifyRecord = record => ({
 const getMinifiedRecords = records => records.map(record => minifyRecord(record));
 
 export default async function getTeamMembers() {
+  const table = getTable();
   const records = await table.select({}).all();
   const minifiedRecords = await getMinifiedRecords(records);
 
