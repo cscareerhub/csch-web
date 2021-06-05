@@ -2,6 +2,7 @@
 
 .blogContainer {
   @include container;
+  justify-content: flex-start;
 }
 
 .blogText {

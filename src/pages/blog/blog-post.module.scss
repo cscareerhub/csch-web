@@ -2,6 +2,7 @@
 
 .blogPostContainer {
   @include container;
+  justify-content: flex-start;
 
   .blogPostContent {
     width: 50vw;

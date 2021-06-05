@@ -30,11 +30,13 @@ For our data, we've integrated Airtable with NextJS, but updates won't automatic
 
 2. Install dependencies with `yarn install`.
 
-3. Run the development server with `yarn dev`.
+3. Create a `.env` to store environment variables needed for Airtable. If you need credentials, please ask the code owners.
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit any file.
+4. Run the development server with `yarn dev`.
 
-5. In development, create a branch with the following naming scheme.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit any file.
+
+6. In development, create a branch with the following naming scheme.
 
 ```
 feature/<yourfeature>
