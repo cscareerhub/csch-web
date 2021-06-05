@@ -75,6 +75,15 @@
   background-color: $discord-med-dark;
 }
 
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 40px 0;
+}
+
 @mixin element-width-by-screen-width {
   width: 50vw;
 
