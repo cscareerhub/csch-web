@@ -1,14 +1,9 @@
 @import '@styles/mixins.scss';
 
-.contactContainer {
+.blogContainer {
   @include container;
-
-  ul {
-    list-style: inside;
-    margin: 20px 0 40px 0;
-  }
 }
 
-.contactText {
+.blogText {
   @include element-width-by-screen-width-narrower;
 }
