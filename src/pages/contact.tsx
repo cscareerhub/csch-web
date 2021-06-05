@@ -16,7 +16,7 @@ const Contact = (): ReactElement => (
           </p>
           <ul>
             <li>
-              Asking in the public <a href="https://discord.gg/6EyEDKk">#ask-a-mod</a> channel in our Discord server
+              Asking in the public <a href="https://discord.gg/cscareerhub">#ask-a-mod</a> channel in our Discord server
             </li>
             <li>
               DMing the CSCH Megabot using the{' '}

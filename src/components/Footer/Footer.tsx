@@ -30,7 +30,7 @@ const Footer = (): ReactElement => (
             loading="lazy"
           />
         }
-        link="https://discord.gg/6EyEDKk"
+        link="https://discord.gg/cscareerhub"
       />
       <FooterSocial
         image={

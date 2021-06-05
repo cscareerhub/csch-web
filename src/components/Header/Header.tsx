@@ -15,7 +15,7 @@ const Header = (props: HeaderProps): ReactElement => {
       <div className={styles.headerContent}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.text}>{text}</p>
-        {actionText && <ActionButton actionText={actionText} link="https://discord.gg/6EyEDKk" />}
+        {actionText && <ActionButton actionText={actionText} link="https://discord.gg/cscareerhub" />}
       </div>
       <iframe
         className={styles.widget}
