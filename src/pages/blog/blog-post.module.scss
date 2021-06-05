@@ -1,0 +1,42 @@
+@import '@styles/mixins.scss';
+
+.blogPostContainer {
+  @include container;
+
+  .blogPostContent {
+    width: 50vw;
+
+    @include element-width-by-screen-width-narrower;
+
+    h1 {
+      margin-bottom: 2.5rem;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 1rem 0 1rem 0;
+    }
+
+    ul {
+      list-style: outside;
+      margin: 20px 0 40px 17px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}

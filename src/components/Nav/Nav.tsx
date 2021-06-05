@@ -11,7 +11,7 @@ const Nav = (): ReactElement => (
         </a>
       </Link>
       <div className={styles.navLinks}>
-        <Link href="/team">
+        <Link href="/blog">
           <a>Blog</a>
         </Link>
         <a href="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/" target="_blank" rel="noreferrer">
