@@ -6,8 +6,14 @@
 
   .blogPostContent {
     width: 50vw;
+    height: 100%;
 
     @include element-width-by-screen-width-narrower;
+
+    audio {
+      width: 100%;
+      margin-top: 40px;
+    }
 
     h1 {
       margin-bottom: 2.5rem;
