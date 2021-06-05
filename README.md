@@ -10,11 +10,23 @@ And [this is our website](https://cscareerhub.com/)! You'll find information abo
 
 Interested in seeing what's next or contributing? Take a look at our [roadmap](https://github.com/cscareerhub/csch-web/projects/1).
 
+## Information About Our Tools
+
+We are using: NextJS, Netlify, and Airtable.
+
+- NextJS is a React-based static site generator (SSG).
+- Netlify autodeploys (and builds website) on master commits. We also use it to store recieves our form data.
+- Airtable is a no-code database that comes with an API (and API reference for our tables) and is easily integrated into apps. It is especially easy to integrate with NextJS and other popular JS-based SSGs.
+
+### A Note About Airtable on NextJS
+
+For our data, we've integrated Airtable with NextJS, but updates won't automatically be shown on website. We will need to bump Netlify to build and deploy by committing so that most up-to-date Airtable data shows up on website since NextJS is an SSG. We can automate this through Airtable webhooks, but it may be for paid plans only. An alternative may be to write a script. For now, we will have to bump Netlify by pushing a commit to master.
+
 ## Contributing
 
 0. Optional: Join us on the CSCH Discord server where we will give you access to the website dev channel where we discuss and test the website.
 
-1. Clone (or fork) the repository and switch to the `stage` branch.
+1. Clone (or fork) the repository.
 
 2. Install dependencies with `yarn install`.
 
@@ -32,7 +44,7 @@ test/<yourtestingchange>
 misc/<yourmiscchange>
 ```
 
-6. Once you've made change, create a pull request to the this repo's `stage` branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
+6. Once you've made change, create a pull request to the this repo's `master` branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
 
 ```
 branch name: docs/change
