@@ -2,13 +2,9 @@
 
 .contactContainer {
   @include container;
-
-  ul {
-    list-style: inside;
-    margin: 20px 0 40px 0;
-  }
 }
 
 .contactText {
   @include element-width-by-screen-width-narrower;
+  margin-left: 5px;
 }
