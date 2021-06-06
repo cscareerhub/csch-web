@@ -1,11 +1,6 @@
-import HeadComponent from '../components/Head';
-import Layout from '../components/Layout';
-import styles from './_text-page.module.scss';
+import MdLayout from '../components/MdLayout/MdLayout';
 
-<HeadComponent title="Code of Conduct" />
-<Layout>
-<div className={styles.textPageContainer}>
-  <div className={styles.textPageContent}>
+<MdLayout title="Code of Conduct">
 
 # Code of Conduct
 
@@ -120,10 +115,8 @@ individual, or aggression toward or disparagement of classes of individuals.
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.
 
-<center className={styles.topButton}>
+<center class="topButton">
   <a onClick={() => window.scrollTo({ top: 0 })}>Go to top</a>
 </center>
 
-  </div>
-</div>
-</Layout>
+</MdLayout>

@@ -1,14 +1,10 @@
 @import '@styles/mixins.scss';
 
-.postsContainer {
+.container {
   @include container;
   justify-content: flex-start;
 }
 
-.postsText {
+.content {
   @include element-width-by-screen-width-narrower;
-
-  h1 {
-    margin-bottom: 2.5rem;
-  }
 }

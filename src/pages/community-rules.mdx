@@ -1,11 +1,6 @@
-import HeadComponent from '../components/Head';
-import Layout from '../components/Layout';
-import styles from './_text-page.module.scss';
+import MdLayout from '../components/MdLayout/MdLayout';
 
-<HeadComponent title="Community Rules" />
-<Layout>
-<div className={styles.textPageContainer}>
-  <div className={styles.textPageContent}>
+<MdLayout title="Community Rules">
 
 # Community Rules
 
@@ -45,10 +40,8 @@ import styles from './_text-page.module.scss';
 
 If you want to ask something and you're unsure whether or not it breaks the rules then [#ask-a-mod]().
 
-<center className={styles.topButton}>
+<center class="topButton">
   <a onClick={() => window.scrollTo({ top: 0 })}>Go to top</a>
 </center>
 
-  </div>
-</div>
-</Layout>
+</MdLayout>
