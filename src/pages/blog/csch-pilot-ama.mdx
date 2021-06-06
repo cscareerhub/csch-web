@@ -1,11 +1,13 @@
+import classnames from 'classnames';
 import HeadComponent from '@components/Head';
 import Layout from '@components/Layout';
-import styles from './blog-post.module.scss';
+import styles from '../_text-page.module.scss';
+import postPageStyles from '../_post-page.module.scss';
 
 <HeadComponent title="CSCH Pilot AMA" />
 <Layout>
-<div className={styles.blogPostContainer}>
-  <div className={styles.blogPostContent}>
+<div className={classnames(postPageStyles.blogPostContainer, styles.textPageContainer)}>
+  <div className={classnames(postPageStyles.blogPostContent, styles.textPageContent)}>
 
 # CS Career Hub Pilot AMA: Learn More About the CSCH Community and Team and Ask CS Career Questions
 

@@ -1,11 +1,11 @@
 @import '@styles/mixins.scss';
 
-.blogContainer {
+.postsContainer {
   @include container;
   justify-content: flex-start;
 }
 
-.blogText {
+.postsText {
   @include element-width-by-screen-width-narrower;
 
   h1 {
