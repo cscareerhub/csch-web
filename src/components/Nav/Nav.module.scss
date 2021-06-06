@@ -12,6 +12,7 @@
   box-shadow: $box-shadow;
   background-color: $discord-darker;
   position: relative; // required for box shadow to be visible
+  white-space: nowrap;
 
   @media screen and (max-width: 1028px) {
     height: 15vh;
@@ -40,5 +41,27 @@
 
   &:hover:before {
     @include link-hover-animation;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 0 5vw;
+  }
+
+  .hideOnTablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hideOnSmallMobile {
+    display: none;
   }
 }

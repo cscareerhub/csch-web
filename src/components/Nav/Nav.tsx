@@ -17,17 +17,22 @@ const Nav = (): ReactElement => (
         <Link href="/blog">
           <a>Blog</a>
         </Link>
-        <a href="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/" target="_blank" rel="noreferrer">
+        <a
+          className={styles.hideOnSmallMobile}
+          href="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Wiki &amp; FAQ
         </a>
         <Link href="/community-rules">
-          <a>Community Rules</a>
+          <a className={styles.hideOnMobile}>Community Rules</a>
         </Link>
         <Link href="/code-of-conduct">
-          <a>Code of Conduct</a>
+          <a className={styles.hideOnTablet}>Code of Conduct</a>
         </Link>
         <Link href="/team">
-          <a>Team</a>
+          <a className={styles.hideOnTablet}>Team</a>
         </Link>
         <Link href="/contact">
           <a>Contact</a>
