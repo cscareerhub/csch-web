@@ -16,11 +16,13 @@ const Contact = (): ReactElement => (
           </p>
           <ul>
             <li>
-              Asking in the public <a href="https://discord.gg/cscareerhub">#ask-a-mod</a> channel in our Discord server
+              Asking in the public
+              <a href="https://discord.com/channels/334891772696330241/529700192111296513"> #ask-a-mod </a>
+              channel in our Discord server
             </li>
             <li>
-              DMing the CSCH Megabot using the{' '}
-              <a href="https://github.com/cscareerhub/megabot/blob/master/specs/modchat.spec.md">modmail command</a>{' '}
+              DMing the CSCH Megabot using the
+              <a href="https://github.com/cscareerhub/megabot/blob/master/specs/modchat.spec.md"> modmail command </a>
               <code>++mc</code> (or <code>++mc -a</code> for anonymity) to message the whole team on Discord (must be in
               the server to do this)
             </li>
