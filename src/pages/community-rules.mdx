@@ -1,11 +1,11 @@
 import HeadComponent from '../components/Head';
 import Layout from '../components/Layout';
-import styles from './community-rules.module.scss';
+import styles from './text-page.module.scss';
 
 <HeadComponent title="Community Rules" />
 <Layout>
-<div className={styles.serverRulesContainer}>
-  <div className={styles.serverRulesContent}>
+<div className={styles.textPageContainer}>
+  <div className={styles.textPageContent}>
 
 # Community Rules
 
@@ -45,7 +45,9 @@ import styles from './community-rules.module.scss';
 
 If you want to ask something and you're unsure whether or not it breaks the rules then [#ask-a-mod]().
 
-<a onClick={() => window.scrollTo({ top: 0 })}>Go to top</a>
+<center className={styles.topButton}>
+  <a onClick={() => window.scrollTo({ top: 0 })}>Go to top</a>
+</center>
 
   </div>
 </div>
