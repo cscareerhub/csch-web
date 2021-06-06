@@ -103,3 +103,11 @@
     width: 80vw;
   }
 }
+
+@mixin element-width-by-screen-height-narrower-youtube {
+  height: 30vw;
+
+  @media screen and (max-width: 1028px) {
+    height: 50vw;
+  }
+}

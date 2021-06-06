@@ -10,9 +10,9 @@
 
     @include element-width-by-screen-width-narrower;
 
-    audio {
+    iframe {
       width: 100%;
-      margin-top: 40px;
+      @include element-width-by-screen-height-narrower-youtube;
     }
 
     h1 {
