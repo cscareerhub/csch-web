@@ -11,6 +11,9 @@ const Nav = (): ReactElement => (
         </a>
       </Link>
       <div className={styles.navLinks}>
+        <Link href="/event-calendar">
+          <a>Event Calendar</a>
+        </Link>
         <Link href="/blog">
           <a>Blog</a>
         </Link>

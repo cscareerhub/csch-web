@@ -1,0 +1,14 @@
+@import '@styles/mixins.scss';
+
+.eventCalendarContainer {
+  @include container;
+  justify-content: flex-start;
+}
+
+.eventCalendarText {
+  @include element-width-by-screen-width-narrower;
+
+  h1 {
+    margin-bottom: 2.5rem;
+  }
+}
