@@ -19,6 +19,7 @@ const Header = (props: HeaderProps): ReactElement => {
       </div>
       <iframe
         className={styles.widget}
+        id="discord-widget-iframe"
         src="https://discordapp.com/widget?id=334891772696330241&theme=dark"
         width="400"
         height="300"

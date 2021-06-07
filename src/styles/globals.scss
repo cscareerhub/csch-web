@@ -86,7 +86,7 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
-iframe {
+iframe:not(#discord-widget-iframe) {
   width: 100%;
   @include element-width-by-screen-height-narrower-youtube;
 }
