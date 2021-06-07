@@ -6,13 +6,6 @@
   color: $offwhite;
 }
 
-@mixin secondary-font {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: $offwhite;
-}
-
 @mixin short-transition {
   transition: all 0.1s ease;
 }

@@ -13,7 +13,7 @@ const Header = (props: HeaderProps): ReactElement => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <h1 className={styles.title}>{title}</h1>
+        <h1 className={styles.title} id ="header-title">{title}</h1>
         <p className={styles.text}>{text}</p>
         {actionText && <ActionButton actionText={actionText} link="https://discord.gg/cscareerhub" />}
       </div>
