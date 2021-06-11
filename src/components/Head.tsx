@@ -45,6 +45,18 @@ const HeadComponent: React.FC<HeadProps> = props => {
       <meta property="twitter:description" content={metaDescription} />
       <meta property="twitter:title" content={metaTitle} />
       <meta property="twitter:site" content="@cscareerhub" />
+      {/* Global site tag (gtag.js) - Google Analytics */}
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}', {
+            page_path: window.location.pathname
+          });`
+        }}
+      />
     </Head>
   );
 };
