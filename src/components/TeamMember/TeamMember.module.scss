@@ -2,8 +2,8 @@
 
 .teamMember {
   @include box-shape;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 230px;
   padding: 0;
 }
 
@@ -27,15 +27,15 @@
   color: $csch-color-dark;
 }
 
+.contributor {
+  color: $csch-contributor-color;
+}
+
 .imageContainer {
-  height: 140px;
+  height: 150px;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
   background-color: $discord-darker;
-
-  img {
-    margin-top: -50px;
-  }
 }
 
 .infoContainer {
@@ -53,8 +53,8 @@
   border-left: 3px solid #32363a;
   transform: rotate(45deg);
   position: relative;
-  top: -67px;
-  left: 205px;
+  top: -65px;
+  left: 145px;
 
   &.inactive {
     background-color: $site-gray;

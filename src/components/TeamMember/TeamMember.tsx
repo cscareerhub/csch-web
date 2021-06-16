@@ -5,15 +5,23 @@ import styles from './TeamMember.module.scss';
 interface TeamMemberProps {
   username: string;
   userRole: string;
+  image: string;
   active: boolean;
 }
 
 const TeamMember = (props: TeamMemberProps): ReactElement => {
-  const { username, userRole, active } = props;
+  const { username, userRole, image, active } = props;
+
   return (
     <div className={classnames(styles.teamMember)}>
       <div className={styles.imageContainer}>
-        <img src="https://cscareerhub.com/csch-statico.png" width={250} height={250} alt="CSCH logo" loading="lazy" />
+        <img
+          src={image || 'https://cscareerhub.com/csch-statico.png'}
+          width={200}
+          height={200}
+          alt="CSCH logo"
+          loading="lazy"
+        />
       </div>
       <div className={styles.infoContainer}>
         <p className={styles.username}>{username}</p>
@@ -21,7 +29,8 @@ const TeamMember = (props: TeamMemberProps): ReactElement => {
           className={classnames(
             styles.userRole,
             userRole === 'Server Mod' && styles.mod,
-            userRole === 'Senior Server Mod' && styles.seniorMod
+            userRole === 'Senior Server Mod' && styles.seniorMod,
+            userRole === 'Server Contributor' && styles.contributor
           )}
         >
           {userRole}
