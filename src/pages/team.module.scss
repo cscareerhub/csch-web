@@ -1,3 +1,12 @@
+@import '@styles/mixins.scss';
+
+.teamPageWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 .teamMembers {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +19,10 @@
 }
 
 .teamHeading {
-  text-align: center;
   padding-top: 40px;
+}
+
+.teamDescription {
+  padding-top: 20px;
+  @include element-width-by-screen-width;
 }
