@@ -25,6 +25,11 @@ button {
   @include primary-font;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 p,
 li {
   line-height: 1.5;
