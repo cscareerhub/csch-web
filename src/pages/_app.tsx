@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { ReactElement, useEffect } from 'react';
-import * as ga from '../lib/ga';
+import * as ga from '../lib/googleAnalytics';
 import '@styles/globals.scss';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types

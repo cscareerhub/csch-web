@@ -1,7 +1,15 @@
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx$/
-});
+const withMdxEnhanced = require('next-mdx-enhanced');
 
-module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
-});
+module.exports = withMdxEnhanced({
+  layoutPath: 'src/components/MdLayout',
+  defaultLayout: true,
+  fileExtensions: ['mdx'],
+  remarkPlugins: [],
+  rehypePlugins: [],
+  usesSrc: false,
+  extendFrontMatter: {
+    process: (mdxContent, frontMatter) => {},
+    phase: 'prebuild|loader|both'
+  },
+  reExportDataFetching: false
+})();

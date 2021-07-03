@@ -5,20 +5,25 @@ import styles from './MdLayout.module.scss';
 
 interface LayoutProps {
   children: JSX.Element | JSX.Element[];
-  title: string;
-  hideTopButton: boolean;
+  title?: string;
+  hideTopButton?: boolean;
+  frontMatter?: {
+    title: string;
+    date: string;
+    hideTopButton?: boolean;
+  } | null;
 }
 
 const MdLayout = (props: LayoutProps): ReactElement => {
-  const { children, title, hideTopButton } = props;
+  const { children, frontMatter, title, hideTopButton } = props;
   return (
     <>
-      <HeadComponent title={title} />
+      <HeadComponent title={frontMatter?.title || title} />
       <Layout>
         <div className={styles.container}>
           <div className={styles.content}>
             {children}
-            {!hideTopButton && (
+            {(frontMatter ? !frontMatter?.hideTopButton : !hideTopButton) && (
               <div className="topButton">
                 <a
                   onClick={() => window.scrollTo({ top: 0 })}
@@ -35,6 +40,12 @@ const MdLayout = (props: LayoutProps): ReactElement => {
       </Layout>
     </>
   );
+};
+
+MdLayout.defaultProps = {
+  title: 'CS Career Hub',
+  hideTopButton: false,
+  frontMatter: null
 };
 
 export default MdLayout;
