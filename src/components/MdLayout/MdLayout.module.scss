@@ -1,4 +1,4 @@
-@import '@styles/mixins.scss';
+@import '@styles/variables.scss', '@styles/mixins.scss';
 
 .container {
   @include container;
@@ -8,18 +8,25 @@
 .content {
   @include element-width-by-screen-width-narrower;
 
-  h1 {
+  h1,
+  h1 > a {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.25;
     margin-bottom: 2rem;
   }
 
-  h2 {
+  h2,
+  h2 > a {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  h1 > a,
+  h2 > a {
+    color: $offwhite;
   }
 
   h3 {

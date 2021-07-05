@@ -67,6 +67,12 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+hr {
+  border: none;
+  height: 0.75px;
+  background-color: lighten($site-gray, 10%);
+}
+
 span.highlightedText {
   color: $csch-color-dark;
 }
