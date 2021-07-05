@@ -29,7 +29,7 @@ const Home = (): ReactElement => (
             title="Read Our Wiki &amp; FAQ"
             text="Read through the channels, pinned posts, and our comprehensive Wiki &amp; FAQ to learn more about CS careers, the industry, and the experiences of others."
             actionText="Read the Wiki"
-            link="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/"
+            link="https://www.notion.so/cscareerhub/CS-Career-Hub-Wiki-FAQ-8bf392e8e8154b5bb811214a56229174"
           />
           <InfoBox
             className={styles.infoBox}

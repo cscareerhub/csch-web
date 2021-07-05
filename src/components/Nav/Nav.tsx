@@ -17,14 +17,7 @@ const Nav = (): ReactElement => (
         <Link href="/blog">
           <a>Blog</a>
         </Link>
-        <a
-          className={styles.hideOnSmallMobile}
-          href="https://app.gitbook.com/@cscareerhub/s/csch-wiki-and-faq/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Wiki &amp; FAQ
-        </a>
+        <Link href="/wiki-faq">Wiki &amp; FAQ</Link>
         <Link href="/community-rules">
           <a className={styles.hideOnMobile}>Community Rules</a>
         </Link>
