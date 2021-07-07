@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
 import { Post, PostData, FullPost } from '../models/Post';
+import { convertToValidDate } from './utils';
 
 export function getSortedPostsData(directory: string): PostData[] {
   const postsDirectory = path.resolve('./src', `./pages/${directory}`);
@@ -25,7 +26,9 @@ export function getSortedPostsData(directory: string): PostData[] {
   });
 
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
+    const date1 = new Date(convertToValidDate(a.date));
+    const date2 = new Date(convertToValidDate(b.date));
+    if (date1 > date2) {
       return 1;
     }
     return -1;

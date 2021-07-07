@@ -5,8 +5,9 @@ export interface Post {
 export interface PostData extends Post {
   date: string;
   title: string;
+  hideTopButton?: boolean;
 }
 
 export interface FullPost extends PostData {
-  contentHtml: any;
+  contentHtml?: any;
 }
