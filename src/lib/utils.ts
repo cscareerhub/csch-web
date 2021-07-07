@@ -20,5 +20,25 @@ export const convertToValidDate = (date: string): string => {
     .join(' ');
 };
 
+export const sortByValidDate = (array: any[], asc = true): any[] =>
+  array.sort((a, b) => {
+    const date1 = new Date(convertToValidDate(a.date));
+    const date2 = new Date(convertToValidDate(b.date));
+
+    // if ascending
+    if (asc) {
+      if (date1 > date2) {
+        return 1;
+      }
+      return -1;
+    }
+
+    // if descending
+    if (date1 > date2) {
+      return -1;
+    }
+    return 1;
+  });
+
 export const partition = (array: any[], isValid): any[][] =>
   array.reduce(([pass, fail], elem) => (isValid(elem) ? [[...pass, elem], fail] : [pass, [...fail, elem]]), [[], []]);
