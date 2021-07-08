@@ -34,7 +34,7 @@ export const sortByValidDate = (array: any[], asc = true): any[] =>
     }
 
     // if descending
-    if (date1 > date2) {
+    if (date1 < date2) {
       return -1;
     }
     return 1;
