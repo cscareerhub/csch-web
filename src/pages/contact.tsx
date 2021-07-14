@@ -7,7 +7,7 @@ import styles from './contact.module.scss';
 const Contact = (): ReactElement => (
   <>
     <HeadComponent title="Contact" />
-    <Layout>
+    <Layout hideTopButton>
       <div className={styles.contactContainer}>
         <div className={styles.contactText}>
           <p>

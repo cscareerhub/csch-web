@@ -8,7 +8,7 @@ const Home = (): ReactElement => (
   <>
     <HeadComponent title="Home" />
     <div>
-      <Layout useHeader>
+      <Layout useHeader hideTopButton deprecatedLayout>
         <div className={styles.infoBoxContainer}>
           <InfoBox
             className={styles.infoBox}

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { getSortedPostsData } from '../../lib/getPosts';
-import MdLayout from '../../components/MdLayout';
+import Layout from '../../components/Layout';
 import { PostData } from '../../models/Post';
 import styles from './index.module.scss';
 
@@ -19,7 +19,7 @@ export async function getStaticProps(): Promise<Record<'props', any>> {
 const BlogPosts = (props): ReactElement => {
   const { allPostsData } = props;
   return (
-    <MdLayout title="Blog" hideTopButton>
+    <Layout title="Blog" hideTopButton>
       <h1>Blog Posts</h1>
       {allPostsData.map((data: PostData) => (
         <li key={data?.id} className={styles.noListStyle}>
@@ -29,7 +29,7 @@ const BlogPosts = (props): ReactElement => {
           </Link>
         </li>
       ))}
-    </MdLayout>
+    </Layout>
   );
 };
 

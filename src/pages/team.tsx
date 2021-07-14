@@ -8,7 +8,7 @@ import styles from './team.module.scss';
 const Team = ({ teamMembers }): ReactElement => (
   <>
     <HeadComponent title="Team" />
-    <Layout>
+    <Layout hideTopButton deprecatedLayout>
       <div className={styles.teamPageWrapper}>
         <h1 className={styles.teamHeading}>The CS Career Hub Team</h1>
 

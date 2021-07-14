@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react';
 import styles from './success.module.scss';
 
 const Success = (): ReactElement => (
-  <Layout>
+  <Layout hideTopButton>
     <div className={styles.successContainer}>
       <p>Message successfully submitted!</p>
       <p>
