@@ -44,13 +44,14 @@ bug/<yourbugfix>
 docs/<yourdocchange>
 test/<yourtestingchange>
 misc/<yourmiscchange>
+content/<yourcontentchange>
 ```
 
 6. Once you've made change, create a pull request to the this repo's `master` branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
 
 ```
 branch name: docs/change
-PR title: [docs] Changed this and that
+PR title: [docs] Changed this and that in the docs
 ```
 
 All PRs will require at least one review from CSCH staff. If it's been over a week, feel free to ping us once in the Discord.
