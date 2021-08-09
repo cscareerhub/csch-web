@@ -31,7 +31,7 @@ const EventCalendar = (props): ReactElement => {
     <Layout title="Event Calendar" hideTopButton>
       <h1>Event Calendar</h1>
       <h2>Upcoming Events</h2>
-      {allEvents[1].map((data: PostData) => renderEvent(data))}
+      {allEvents[1]?.length ? allEvents[1].map((data: PostData) => renderEvent(data)) : 'Stay tuned!'}
       <h2>Past Events</h2>
       {allEvents[0].map((data: PostData) => renderEvent(data))}
     </Layout>
