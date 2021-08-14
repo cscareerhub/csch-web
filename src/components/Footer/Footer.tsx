@@ -45,6 +45,19 @@ const Footer = (): ReactElement => (
         }
         link="https://www.reddit.com/r/cscareerquestions/comments/a7y8qg/cs_career_hackers_discord_server/"
       />
+      <FooterSocial
+        image={
+          <img
+            className={styles.footerSocialImage}
+            src="/images/youtube-logo.png"
+            height={25}
+            width={25}
+            alt="Youtube logo"
+            loading="lazy"
+          />
+        }
+        link="https://www.youtube.com/channel/UCWFK2E2OoPHnIL_VMJXMu5A/"
+      />
     </div>
   </footer>
 );
