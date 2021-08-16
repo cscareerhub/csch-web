@@ -19,6 +19,17 @@
   }
 }
 
+.secondaryNav {
+  height: 6vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2vw;
+  background-color: $discord-dark;
+}
+
 .logo {
   margin-top: 5px;
 }

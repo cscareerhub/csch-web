@@ -17,18 +17,32 @@ const Nav = (): ReactElement => (
         <Link href="/blog">
           <a>Blog</a>
         </Link>
-        <Link href="/wiki-faq">Wiki &amp; FAQ</Link>
-        <Link href="/community-rules">
-          <a className={styles.hideOnMobile}>Community Rules</a>
-        </Link>
-        <Link href="/code-of-conduct">
-          <a className={styles.hideOnTablet}>Code of Conduct</a>
+        <Link href="/wiki-faq">
+          <a className={styles.hideOnMobile}>Wiki &amp; FAQ</a>
         </Link>
         <Link href="/team">
-          <a className={styles.hideOnTablet}>Team</a>
+          <a className={styles.hideOnMobile}>Team</a>
         </Link>
+        <a
+          className={styles.hideOnMobile}
+          href="https://www.cscareerhub.store/listing/csch-original-collection"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Store
+        </a>
         <Link href="/contact">
           <a>Contact</a>
+        </Link>
+      </div>
+    </nav>
+    <nav className={styles.secondaryNav}>
+      <div className={styles.navLinks}>
+        <Link href="/community-rules">
+          <a>Community Rules</a>
+        </Link>
+        <Link href="/code-of-conduct">
+          <a>Code of Conduct</a>
         </Link>
       </div>
     </nav>
