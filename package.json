@@ -34,6 +34,7 @@
     "gray-matter": "^4.0.3",
     "next": "10.0.4",
     "next-mdx-enhanced": "^5.0.0",
+    "nextjs-breadcrumbs": "^1.1.6",
     "prettier": "^2.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
