@@ -107,12 +107,12 @@ h2.fancy {
 .littlecrumbs {
   padding: 10px 0;
   list-style: none;
-}
 
-.littlecrumbs li {
-  display: inline;
-}
+  li {
+    display: inline;
+  }
 
-.littlecrumbs li+li:before {
-  content: " > ";
+  li+li:before {
+    content: " > ";
+  }
 }

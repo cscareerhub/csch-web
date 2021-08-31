@@ -1,7 +1,7 @@
 import React from 'react';
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
-function csch_names(title) {
+function cschNames(title) {
   switch(title) {
     case 'event calendar':
       return "Event Calendar"
@@ -31,11 +31,13 @@ function csch_names(title) {
 }
 
 const LittleCrumbs = () => {
-  return <Breadcrumbs
-          transformLabel={(title) => csch_names(title)}
-          listClassName={"littlecrumbs"}
-          omitRootLabel
-          />;
+  return (
+    <Breadcrumbs
+      transformLabel={(title) => cschNames(title)}
+      listClassName={"littlecrumbs"}
+      omitRootLabel
+    />;
+  );
 };
 
 export default LittleCrumbs;
