@@ -36,7 +36,7 @@ const LittleCrumbs = () => {
       transformLabel={(title) => cschNames(title)}
       listClassName={"littlecrumbs"}
       omitRootLabel
-    />;
+    />
   );
 };
 
