@@ -103,3 +103,16 @@ h2.fancy {
 .highlight {
   background-color: $site-gray;
 }
+
+.littlecrumbs {
+  padding: 10px 0;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+
+  li+li:before {
+    content: " > ";
+  }
+}
