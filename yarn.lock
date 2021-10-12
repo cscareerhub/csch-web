@@ -4514,11 +4514,6 @@ next@10.0.4:
   optionalDependencies:
     sharp "0.26.2"
 
-nextjs-breadcrumbs@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/nextjs-breadcrumbs/-/nextjs-breadcrumbs-1.1.6.tgz#cca426d80770df12250d3ade8fffef5b9549559b"
-  integrity sha512-e74tPfqxcjFG7jQ4NYoamzxHmoZjE5qqfcXtjFEkOFHwb/KjcOQpx6ToGPXyXlT74LCBM9dyXqN0rytZ4f3OuA==
-
 node-abi@^2.7.0:
   version "2.19.3"
   resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.19.3.tgz#252f5dcab12dad1b5503b2d27eddd4733930282d"

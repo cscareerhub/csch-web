@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import HeadComponent from '@components/Head';
 import Nav from '@components/Nav/Nav';
-import LittleCrumbs from '@components/Nav/Bc';
 import Header from '@components/Header/Header';
 import Footer from '@components/Footer/Footer';
 import styles from './Layout.module.scss';
@@ -25,7 +24,6 @@ const Layout = (props: LayoutProps): ReactElement => {
     <>
       <HeadComponent title={frontMatter?.title || title} />
       <Nav />
-      <LittleCrumbs />
       <main>
         {useHeader && (
           <Header
