@@ -23,14 +23,6 @@ const Nav = (): ReactElement => (
         <Link href="/team">
           <a className={styles.hideOnMobile}>Team</a>
         </Link>
-        <a
-          className={styles.hideOnMobile}
-          href="https://www.cscareerhub.store/listing/csch-original-collection"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Store
-        </a>
         <Link href="/contact">
           <a>Contact</a>
         </Link>
