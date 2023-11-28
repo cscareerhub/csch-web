@@ -24,7 +24,7 @@ const BlogPosts = (props): ReactElement => {
       {allPostsData.map((data: PostData) => (
         <li key={data?.id} className={styles.noListStyle}>
           <span>{data?.date}</span>
-          <Link href={`/${directory}/${data?.id}`}>
+          <Link href={`/${directory}/${data?.id}`} legacyBehavior>
             <a>{data?.title}</a>
           </Link>
         </li>
