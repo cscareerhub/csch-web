@@ -1,9 +1,11 @@
-const withMDX = require('@next/mdx');
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/
+});
 
 module.exports = withMDX({
   layoutPath: 'src/components/Layout',
   defaultLayout: true,
-  fileExtensions: ['mdx'],
+  pageExtensions: ['tsx', 'mdx'],
   remarkPlugins: [],
   rehypePlugins: [],
   usesSrc: false,
@@ -12,4 +14,4 @@ module.exports = withMDX({
     phase: 'prebuild|loader|both'
   },
   reExportDataFetching: false
-})();
+});
