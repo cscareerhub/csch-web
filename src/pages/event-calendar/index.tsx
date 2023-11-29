@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import getEventsByDate from 'src/lib/getEvents';
-import Layout from '../../components/Layout';
 import { PostData } from '../../models/Post';
 import styles from './index.module.scss';
 

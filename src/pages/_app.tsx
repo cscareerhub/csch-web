@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import React, { ReactElement, useEffect } from 'react';
+import Layout from '@components/Layout';
 import * as ga from '../lib/googleAnalytics';
 import '@styles/globals.scss';
-import Layout from '@components/Layout';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const Application = ({ Component, pageProps }): ReactElement => {

@@ -67,7 +67,8 @@ Layout.defaultProps = {
   hideTopButton: false,
   frontMatter: null,
   useHeader: false,
-  wideLayout: false
+  wideLayout: false,
+  hideFrontMatterHack: false
 };
 
 export default Layout;
