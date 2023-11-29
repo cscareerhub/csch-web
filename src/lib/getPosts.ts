@@ -1,8 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import remark from 'remark';
-import html from 'remark-html';
+import remarkHtml from 'remark-html';
+import remarkParse from 'remark-parse';
+// import { read } from 'to-vfile';
+import { unified } from 'unified';
 import { Post, PostData, FullPost } from '../models/Post';
 import { sortByValidDate } from './utils';
 
@@ -43,7 +45,7 @@ export async function getPostData(id: string, directory: string): Promise<FullPo
   const matterResult = matter(fileContents);
   const postData = matterResult.data as PostData;
 
-  const processedContent = await remark().use(html).process(matterResult.content);
+  const processedContent = await unified().use(remarkParse).use(remarkHtml).process(matterResult.content);
   const contentHtml = processedContent.toString();
 
   return {

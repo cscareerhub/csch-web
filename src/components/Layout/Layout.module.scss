@@ -45,3 +45,21 @@
     @include element-width-by-screen-height-narrower-youtube;
   }
 }
+
+.hideFrontMatterHack {
+  hr:first-child {
+    display: none;
+  }
+
+  hr:first-child + p {
+    display: none;
+  }
+
+  hr:first-child + h2 {
+    display: none;
+  }
+
+  hr:first-child + p + h2 {
+    display: none;
+  }
+}
