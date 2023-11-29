@@ -28,14 +28,16 @@ const renderEvent = (data: PostData) => (
 const EventCalendar = (props): ReactElement => {
   const { allEvents } = props;
   return (
-    <Layout title="Event Calendar" hideTopButton>
+    <>
       <h1>Event Calendar</h1>
       <h2>Upcoming Events</h2>
       {allEvents[1]?.length ? allEvents[1].map((data: PostData) => renderEvent(data)) : <p>Stay tuned!</p>}
       <h2>Past Events</h2>
       {allEvents[0].map((data: PostData) => renderEvent(data))}
-    </Layout>
+    </>
   );
 };
 
 export default EventCalendar;
+
+EventCalendar.displayName = 'Event Calendar';

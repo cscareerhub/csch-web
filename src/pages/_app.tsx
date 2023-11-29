@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import React, { ReactElement, useEffect } from 'react';
 import * as ga from '../lib/googleAnalytics';
 import '@styles/globals.scss';
+import Layout from '@components/Layout';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const Application = ({ Component, pageProps }): ReactElement => {
@@ -22,7 +23,20 @@ const Application = ({ Component, pageProps }): ReactElement => {
     };
   }, [router.events]);
 
-  return <Component {...pageProps} />;
+  return Component.displayName ? (
+    <Layout
+      title={Component.displayName}
+      hideTopButton
+      wideLayout={Component.wideLayout}
+      useHeader={Component.useHeader}
+    >
+      <Component {...pageProps} />
+    </Layout>
+  ) : (
+    <Layout title={'CS Career Hub'}>
+      <Component {...pageProps} />
+    </Layout>
+  );
 };
 
 export default Application;

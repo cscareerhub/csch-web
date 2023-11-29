@@ -15,11 +15,11 @@ interface LayoutProps {
     hideTopButton?: boolean;
   } | null;
   useHeader?: boolean;
-  deprecatedLayout?: boolean;
+  wideLayout?: boolean;
 }
 
 const Layout = (props: LayoutProps): ReactElement => {
-  const { children, frontMatter, title, hideTopButton, useHeader, deprecatedLayout } = props;
+  const { children, frontMatter, title, hideTopButton, useHeader, wideLayout } = props;
   return (
     <>
       <HeadComponent title={frontMatter?.title || title} />
@@ -32,7 +32,7 @@ const Layout = (props: LayoutProps): ReactElement => {
             actionText="Join CS Career Hub"
           />
         )}
-        {deprecatedLayout ? (
+        {wideLayout ? (
           children
         ) : (
           <div className={styles.container}>
@@ -64,7 +64,7 @@ Layout.defaultProps = {
   hideTopButton: false,
   frontMatter: null,
   useHeader: false,
-  deprecatedLayout: false
+  wideLayout: false
 };
 
 export default Layout;
