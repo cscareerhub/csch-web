@@ -33,7 +33,7 @@ const Application = ({ Component, pageProps }): ReactElement => {
       <Component {...pageProps} />
     </Layout>
   ) : (
-    <Layout title={'CS Career Hub'}>
+    <Layout title={'CS Career Hub'} hideFrontMatterHack>
       <Component {...pageProps} />
     </Layout>
   );
