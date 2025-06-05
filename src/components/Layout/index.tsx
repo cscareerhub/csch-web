@@ -15,11 +15,14 @@ interface LayoutProps {
     hideTopButton?: boolean;
   } | null;
   useHeader?: boolean;
-  deprecatedLayout?: boolean;
+  wideLayout?: boolean;
+  hideFrontMatterHack?: boolean;
 }
 
+// TODO: fix frontMatter prop, will no longer work due to removal of next-mdx-enhanced
 const Layout = (props: LayoutProps): ReactElement => {
-  const { children, frontMatter, title, hideTopButton, useHeader, deprecatedLayout } = props;
+  const { children, frontMatter, title, hideTopButton, useHeader, wideLayout, hideFrontMatterHack } = props;
+
   return (
     <>
       <HeadComponent title={frontMatter?.title || title} />
@@ -32,11 +35,11 @@ const Layout = (props: LayoutProps): ReactElement => {
             actionText="Join CS Career Hub"
           />
         )}
-        {deprecatedLayout ? (
+        {wideLayout ? (
           children
         ) : (
           <div className={styles.container}>
-            <div className={styles.content}>
+            <div className={`${styles.content} ${hideFrontMatterHack ? styles.hideFrontMatterHack : ''}`}>
               {children}
               {(frontMatter ? !frontMatter?.hideTopButton : !hideTopButton) && (
                 <div className="topButton">
@@ -64,7 +67,8 @@ Layout.defaultProps = {
   hideTopButton: false,
   frontMatter: null,
   useHeader: false,
-  deprecatedLayout: false
+  wideLayout: false,
+  hideFrontMatterHack: false
 };
 
 export default Layout;
