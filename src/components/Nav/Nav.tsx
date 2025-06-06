@@ -14,8 +14,8 @@ const Nav = (): ReactElement => (
         <Link href="/event-calendar" legacyBehavior>
           <a>Event Calendar</a>
         </Link>
-        <Link href="/blog" legacyBehavior>
-          <a>Blog</a>
+        <Link href="/event-recordings" legacyBehavior>
+          <a>Event Recordings</a>
         </Link>
         <Link href="/wiki-faq" legacyBehavior>
           <a className={styles.hideOnMobile}>Wiki &amp; FAQ</a>
