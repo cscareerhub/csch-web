@@ -12,7 +12,7 @@ const HeadComponent: React.FC<HeadProps> = props => {
   let metaTitle = `${title} | CS Career Hub`;
   let metaDescription =
     description ||
-    "CS Career Hub was created to help guide engineers at any point in their career. Over 20,000 users have joined our community, ranging from first-year students to hiring managers. In the past few years, we've facilitated thousands of mock interviews and resume reviews with candidates. With plenty of plans on the roadmap, you can expect even more to come.";
+    "CS Career Hub was created to help guide engineers at any point in their career. Over 36,000 users have joined our community, ranging from first-year students to hiring managers. In the past few years, we've facilitated thousands of mock interviews and resume reviews with candidates. With plenty of plans on the roadmap, you can expect even more to come.";
   let metaImage = 'https://cscareerhub.com/csch-statico.png';
 
   return (
