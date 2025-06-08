@@ -30,7 +30,7 @@ const Team = ({ teamMembers }): ReactElement => (
         {teamMembers
           .filter(member => member.fields.Active)
           .filter(
-            member => member.fields['User Role'].includes('Lead') || member.fields['User Role'].includes('Director')
+            member => member.fields['User Role'].includes('Community Lead')
           )
           .sort((member1, member2) => (member1.fields.Name.toLowerCase() > member2.fields.Name.toLowerCase() ? 1 : -1))
           .map(member => (
@@ -55,7 +55,7 @@ const Team = ({ teamMembers }): ReactElement => (
       <div className={styles.teamMembers}>
         {teamMembers
           .filter(member => member.fields.Active)
-          .filter(member => member.fields['User Role'].includes('Server Mod'))
+          .filter(member => member.fields['User Role'].includes('Server Moderator'))
           .sort((member1, member2) => (member1.fields.Name.toLowerCase() > member2.fields.Name.toLowerCase() ? 1 : -1))
           .map(member => (
             <TeamMember
