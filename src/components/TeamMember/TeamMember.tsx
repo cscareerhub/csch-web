@@ -29,7 +29,8 @@ const TeamMember = (props: TeamMemberProps): ReactElement => {
           className={classnames(
             styles.userRole,
             userRole === 'Server Moderator' && styles.mod,
-            userRole === 'Server Contributor' && styles.contributor
+            userRole === 'Server Contributor' && styles.contributor,
+            userRole === 'Hall of Fame' && styles.hallOfFame
           )}
         >
           {userRole}
