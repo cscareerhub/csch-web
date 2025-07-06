@@ -32,7 +32,7 @@ For our data, we've integrated Airtable with NextJS, but updates won't automatic
 
 3. Create a `.env` to store environment variables needed for Airtable. If you need credentials, please ask the code owners.
 
-4. Make sure you are on the correct node version using nvm. Run `nvm use` to make sure you are on the repository's configured node version.
+4. Make sure you are on the correct node version using nvm. Run `nvm install` to make sure you are on the repository's configured node version.
 
 5. Run the development server with `yarn dev`.
 
