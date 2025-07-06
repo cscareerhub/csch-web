@@ -32,22 +32,13 @@ For our data, we've integrated Airtable with NextJS, but updates won't automatic
 
 3. Create a `.env` to store environment variables needed for Airtable. If you need credentials, please ask the code owners.
 
-4. Run the development server with `yarn dev`.
+4. Make sure you are on the correct node version using nvm. Run `nvm install` to make sure you are on the repository's configured node version.
 
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit any file.
+5. Run the development server with `yarn dev`.
 
-6. In development, create a branch with the following naming scheme.
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit any file.
 
-```
-feature/<yourfeature>
-bug/<yourbugfix>
-docs/<yourdocchange>
-test/<yourtestingchange>
-misc/<yourmiscchange>
-content/<yourcontentchange>
-```
-
-6. Once you've made change, create a pull request to the this repo's `master` branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
+7. Once you've made change, create a pull request to the this repo's `master` branch with the type of change, which should correspond to the first part of your branch name, in the PR title.
 
 ```
 branch name: docs/change
