@@ -6,11 +6,10 @@ Write purpose here
 
 ### Pull request checklist
 
-- [ ] Branch and PR are named correctly
+- [ ] PR title is descriptive
 - [ ] Updated relevant documentation
 - [ ] Tested locally on the website
-- [ ] Wrote unit tests for changes
 
 ### Testing instructions
 
-Write testing instructions here
+Write testing instructions here, N/A if none
