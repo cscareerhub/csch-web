@@ -9,22 +9,19 @@
     width: 370px;
     height: 390px;
     background-color: $discord-darker;
+    margin: 20px;
 }
 
 .occupation {
     color: #00ff3e;
     font-weight: 500;
-  }
-
-.testimonial {
-    margin: 20px;
-}
-
-.quote {
-    text-align: right;
 }
 
 .quotes {
     font-size: 40px;
     font-family: "Passion One", sans-serif;
+}
+
+.endquote {
+    text-align: right;
 }

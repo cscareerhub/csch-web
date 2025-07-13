@@ -2,10 +2,11 @@ import React, { ReactElement } from 'react';
 import styles from "./Testimonials.module.scss"
 import Testimonial from "./Testimonial/Testimonial";
 
-const Testimonials = (): ReactElement => (
-        <div className={styles.testimonialContainer}>
+const Testimonials = (): ReactElement => {
+    return (
+        <div className={styles.testimonialSection}>
             <p className={styles.testimonialHeading}>Testimonals</p>
-            <div className={styles.testimonialSection}>
+            <div className={styles.testimonialContainer}>
                 <Testimonial
                     text="I feel like my friends can mostly keep up when I talk tech with them, they just don't have much ambition as far career goes. One of the things groups like CSCH do is they normalize hyper ambition in a way which is pretty nonstandard."
                     occupation="Senior Software Engineer at Netflix"
@@ -19,7 +20,8 @@ const Testimonials = (): ReactElement => (
                     occupation="Software Engineer at Google"
                 />
             </div>
-      </div>
-    )
+        </div>
+    );
+}
 
 export default Testimonials;
