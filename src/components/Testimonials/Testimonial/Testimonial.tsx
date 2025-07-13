@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import styles from './Testimonial.module.scss';
 import classnames from 'classnames';
+import styles from './Testimonial.module.scss';
 
 interface TestimonialProps {
     text: string;

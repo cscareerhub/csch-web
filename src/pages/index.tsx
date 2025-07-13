@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import HeadComponent from '@components/Head';
 import InfoBox from '@components/InfoBox/InfoBox';
-import styles from './index.module.scss';
 import Testimonials from '@components/Testimonials/Testimonials';
+import styles from './index.module.scss';
 
 const Home = (): ReactElement => (
   <>
