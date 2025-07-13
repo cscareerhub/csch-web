@@ -8,12 +8,12 @@ interface TestimonialProps {
 }
 
 const Testimonial = (props: TestimonialProps): ReactElement => {
-    const {text, occupation } = props;
+    const { text, occupation } = props;
     return (
         <div className={styles.testimonial}>
             <p className={styles.quotes}>&ldquo;</p>
-            <p className={styles.text}>{text}</p>
-            <p className={classnames(styles.quote, styles.quotes)}>&rdquo;</p>
+            <p>{text}</p>
+            <p className={classnames(styles.quotes, styles.endquote)}>&rdquo;</p>
             <div>
                 <p className={styles.occupation}>{occupation}</p>
             </div>
