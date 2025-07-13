@@ -14,24 +14,5 @@
   margin: 20px;
 }
 
-.testimonialHeading {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.testimonialContainer {
-  @include primary-font;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 10px 60px 10px;
-  background-color: $discord-med-dark;
-}
-
-.testimonialSection {
-  display: flex;
-  flex-direction: row;
-}
 
 
