@@ -1,9 +1,8 @@
-import styles from "./Testimonials.module.scss"
 import React, { ReactElement } from 'react';
+import styles from "./Testimonials.module.scss"
 import Testimonial from "./Testimonial/Testimonial";
 
-const Testimonials = (): ReactElement => {
-    return (
+const Testimonials = (): ReactElement => (
         <div className={styles.testimonialContainer}>
             <p className={styles.testimonialHeading}>Testimonals</p>
             <div className={styles.testimonialSection}>
@@ -21,7 +20,6 @@ const Testimonials = (): ReactElement => {
                 />
             </div>
       </div>
-    );
-}
+    )
 
 export default Testimonials;
