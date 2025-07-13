@@ -38,7 +38,7 @@ const Home = (): ReactElement => (
           link="https://discord.gg/cscareerhub"
         />
       </div>
-      <Testimonials/>
+      <Testimonials />
     </div>
   </>
 );

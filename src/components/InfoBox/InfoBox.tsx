@@ -11,8 +11,7 @@ interface InfoBoxProps {
   link: string;
 }
 
-const InfoBox = (props: InfoBoxProps): ReactElement => {
-  const { className, actionText, title, text, link } = props;
+const InfoBox = ({ className, actionText, title, text, link }: InfoBoxProps): ReactElement => {
   return (
     <div className={classnames(styles.infoBox, className)}>
       <h2 className={styles.title}>{title}</h2>

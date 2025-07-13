@@ -9,6 +9,7 @@
     align-items: center;
     padding: 40px 10px 60px 10px;
     background-color: $discord-med-dark;
+    text-align: left;
 }
 
 .testimonialHeading {
@@ -22,4 +23,8 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
+}
+
+.dark {
+    background-color: $discord-darker;
 }
