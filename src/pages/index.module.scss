@@ -1,10 +1,11 @@
 @import '@styles/variables.scss';
+@import '@styles/mixins.scss';
 
 .infoBoxContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
   flex-wrap: wrap;
   background-color: $discord-darker;
 }
@@ -12,3 +13,25 @@
 .infoBox {
   margin: 20px;
 }
+
+.testimonialHeading {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.testimonialContainer {
+  @include primary-font;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px 60px 10px;
+  background-color: $discord-med-dark;
+}
+
+.testimonialSection {
+  display: flex;
+  flex-direction: row;
+}
+
+

@@ -1,0 +1,32 @@
+@import '@styles/variables.scss', '@styles/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+.testimonial {
+    @include box-shape;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 370px;
+    height: 390px;
+    background-color: $discord-darker;
+}
+
+.occupation {
+    color: #00ff3e;
+    font-weight: 500;
+  }
+
+.testimonial {
+    margin: 20px;
+}
+
+.quote {
+    text-align: right;
+}
+
+.quotes {
+    font-size: 40px;
+    font-family: "Passion One", sans-serif;
+}
+
+
