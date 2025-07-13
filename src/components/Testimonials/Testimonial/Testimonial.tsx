@@ -5,12 +5,12 @@ import styles from './Testimonial.module.scss';
 interface TestimonialProps {
     text: string;
     occupation: string;
+    backgroundColor?: 'dark' | 'light';
 }
 
-const Testimonial = (props: TestimonialProps): ReactElement => {
-    const { text, occupation } = props;
+const Testimonial = ({ text, occupation, backgroundColor }: TestimonialProps): ReactElement => {
     return (
-        <div className={styles.testimonial}>
+        <div className={classnames(styles.testimonial, styles[backgroundColor])}>
             <p className={styles.quotes}>&ldquo;</p>
             <p>{text}</p>
             <p className={classnames(styles.quotes, styles.endquote)}>&rdquo;</p>

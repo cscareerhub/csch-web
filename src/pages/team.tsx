@@ -92,6 +92,8 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
 
+      <Testimonials backgroundColor='dark' />
+
       <h1 className={styles.teamHeading}>Hall of Fame</h1>
 
       <p className={styles.teamDescription}>
@@ -114,7 +116,6 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
     </div>
-    <Testimonials/>
   </>
 );
 
