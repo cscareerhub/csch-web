@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import HeadComponent from '@components/Head';
 import InfoBox from '@components/InfoBox/InfoBox';
 import styles from './index.module.scss';
+import Testimonials from '@components/Testimonials/Testimonials';
 
 const Home = (): ReactElement => (
   <>
@@ -37,6 +38,7 @@ const Home = (): ReactElement => (
           link="https://discord.gg/cscareerhub"
         />
       </div>
+      <Testimonials/>
     </div>
   </>
 );

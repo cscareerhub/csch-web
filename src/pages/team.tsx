@@ -3,6 +3,7 @@ import HeadComponent from '@components/Head';
 import TeamMember from '@components/TeamMember/TeamMember';
 import getTeamMembers from 'src/lib/getTeamMembers';
 import styles from './team.module.scss';
+import Testimonials from '@components/Testimonials/Testimonials';
 
 const Team = ({ teamMembers }): ReactElement => (
   <>
@@ -113,6 +114,7 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
     </div>
+    <Testimonials/>
   </>
 );
 
