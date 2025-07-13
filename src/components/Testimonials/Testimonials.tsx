@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
+import classnames from "classnames";
 import styles from "./Testimonials.module.scss"
 import Testimonial from "./Testimonial/Testimonial";
-import classnames from "classnames";
 
 interface TestimonialsProps {
     backgroundColor?: 'dark' | 'light';
@@ -31,3 +31,7 @@ const Testimonials = ({ backgroundColor }: TestimonialsProps): ReactElement => (
 )
 
 export default Testimonials;
+
+Testimonials.defaultProps = {
+    backgroundColor: 'light'
+};
