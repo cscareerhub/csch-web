@@ -4,7 +4,6 @@ import TeamMember from '@components/TeamMember/TeamMember';
 import getTeamMembers from 'src/lib/getTeamMembers';
 import Testimonials from '@components/Testimonials/Testimonials';
 import styles from './team.module.scss';
-import Head from 'next/head';
 
 const Team = ({ teamMembers }): ReactElement => (
   <>
@@ -95,7 +94,7 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
 
-      <Testimonials/>
+      <Testimonials backgroundColor='dark'/>
 
       <h1 className={styles.teamHeading}>Hall of Fame</h1>
 
