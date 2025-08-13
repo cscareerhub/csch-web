@@ -5,7 +5,9 @@ import styles from './contact.module.scss';
 
 const Contact = (): ReactElement => (
   <>
-    <HeadComponent title="Contact" />
+    <HeadComponent title="Contact" 
+      description="Get in touch with CS Career Hub staff for questions, feedback, or concerns via our #ask-a-mod Discord channel or the contact form below. Name, username, and email are optional."
+    />
     <div className={styles.contactContainer}>
       <div className={styles.contactText}>
         <p>
