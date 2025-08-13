@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
-import HeadComponent from '@components/Head';
 import Nav from '@components/Nav/Nav';
 import Header from '@components/Header/Header';
 import Footer from '@components/Footer/Footer';
 import styles from './Layout.module.scss';
+import HeadComponent from '@components/Head';
 
 interface LayoutProps {
   children: JSX.Element | JSX.Element[];

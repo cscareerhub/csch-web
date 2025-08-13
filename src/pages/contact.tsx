@@ -1,11 +1,17 @@
 import React, { ReactElement } from 'react';
-import HeadComponent from '@components/Head';
+
 import ContactForm from '@components/ContactForm/ContactForm';
 import styles from './contact.module.scss';
+import Head from 'next/head';
 
 const Contact = (): ReactElement => (
   <>
-    <HeadComponent title="Contact" />
+    <Head>
+      <title title="Contact">Contact</title>
+      <meta name="description" content="Get in touch with CS Career Hub staff for questions, feedback, or concerns via our #ask-a-mod Discord channel or the contact form below. Name, username, and email are optional."/>
+      <meta property="og:description" content="Need assistance or want to share feedback? Contact CS Career Hub staff on Discord's #ask-a-mod or via our simple contact form."/>
+      <meta property="twitter:description" content="Need assistance or want to share feedback? Contact CS Career Hub staff on Discord's #ask-a-mod or via our simple contact form."/>
+    </Head>
     <div className={styles.contactContainer}>
       <div className={styles.contactText}>
         <p>

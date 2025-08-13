@@ -1,12 +1,18 @@
 import React, { ReactElement } from 'react';
-import HeadComponent from '@components/Head';
+
 import InfoBox from '@components/InfoBox/InfoBox';
 import Testimonials from '@components/Testimonials/Testimonials';
 import styles from './index.module.scss';
+import Head from "next/head";
 
 const Home = (): ReactElement => (
   <>
-    <HeadComponent title="Home" />
+    <Head>
+        <title title="Wiki & FAQ">Wiki & FAQ</title>
+        <meta name="description" content="Explore the CS Career Hub Wiki for detailed guides, resources, and answers to common questions."/>
+        <meta property="og:description" content="Explore the CS Career Hub Wiki for detailed guides, resources, and answers to common questions."/>
+        <meta property="twitter:description" content="Explore the CS Career Hub Wiki for detailed guides, resources, and answers to common questions."/>
+      </Head>
     <div>
       <div className={styles.infoBoxContainer}>
         <InfoBox

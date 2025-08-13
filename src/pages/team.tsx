@@ -1,13 +1,18 @@
 import React, { ReactElement } from 'react';
-import HeadComponent from '@components/Head';
 import TeamMember from '@components/TeamMember/TeamMember';
 import getTeamMembers from 'src/lib/getTeamMembers';
 import Testimonials from '@components/Testimonials/Testimonials';
 import styles from './team.module.scss';
+import Head from 'next/head';
 
 const Team = ({ teamMembers }): ReactElement => (
   <>
-    <HeadComponent title="Team" />
+    <Head>
+      <title title="Team">Team</title>
+      <meta name="description" content="Meet the dedicated CS Career Hub community members who have played key roles in building and improving our supportive network."/>
+      <meta property="og:description" content="Meet the dedicated CS Career Hub community members who have played key roles in building and improving our supportive network."/>
+      <meta property="twitter:description" content="Meet the dedicated CS Career Hub community members who have played key roles in building and improving our supportive network."/>
+    </Head>
     <div className={styles.teamPageWrapper}>
       <h1 className={styles.teamHeading}>The CS Career Hub Team</h1>
 
@@ -92,6 +97,8 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
 
+      <Testimonials />
+
       <h1 className={styles.teamHeading}>Hall of Fame</h1>
 
       <p className={styles.teamDescription}>
@@ -114,7 +121,6 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
     </div>
-    <Testimonials/>
   </>
 );
 

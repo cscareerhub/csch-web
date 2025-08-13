@@ -3,6 +3,7 @@ import Link from 'next/link';
 import getEventsByDate from 'src/lib/getEvents';
 import { PostData } from '../../models/Post';
 import styles from './index.module.scss';
+import Head from "next/head";
 
 const directory = 'event-calendar';
 
@@ -28,6 +29,12 @@ const EventCalendar = (props): ReactElement => {
   const { allEvents } = props;
   return (
     <>
+      <Head>
+        <title title="Event Calendar">Event Calendar</title>
+        <meta name="description" content="Explore upcoming CS Career Hub events and catch up on previous ones to stay connected and involved."/>
+        <meta property="og:description" content="Explore upcoming CS Career Hub events and catch up on previous ones to stay connected and involved."/>
+        <meta property="twitter:description" content="Explore upcoming CS Career Hub events and catch up on previous ones to stay connected and involved."/>
+      </Head>
       <h1>Event Calendar</h1>
       <h2>Upcoming Events</h2>
       {allEvents[1]?.length ? allEvents[1].map((data: PostData) => renderEvent(data)) : <p>Stay tuned!</p>}
