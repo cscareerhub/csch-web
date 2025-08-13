@@ -7,7 +7,9 @@ import styles from './team.module.scss';
 
 const Team = ({ teamMembers }): ReactElement => (
   <>
-    <HeadComponent title="Team" />
+    <HeadComponent title="Team" 
+      description="Meet the dedicated members of the CS Career Hub community who have made significant contributions to improving and supporting our network."
+    />
     <div className={styles.teamPageWrapper}>
       <h1 className={styles.teamHeading}>The CS Career Hub Team</h1>
 
@@ -92,7 +94,7 @@ const Team = ({ teamMembers }): ReactElement => (
           ))}
       </div>
 
-      <Testimonials backgroundColor='dark' />
+      <Testimonials backgroundColor='dark'/>
 
       <h1 className={styles.teamHeading}>Hall of Fame</h1>
 
